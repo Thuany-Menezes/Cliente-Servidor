@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lixo Zero</title>
+    <link rel="stylesheet" href="/assets/css/bulma.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white py-10">
+    <div class="w-full max-w-2xl mx-auto">
+        <form method="POST" action="cadastro.php" class="flex flex-col space-y-3 w-full">
+            <div>
+                <span>Nome completo</span>
+                <input name="nome_completo" placeholder="Seu nome aqui" type="text" class="w-full py-2 border-b-2 border-b-gray-200 focus:border-b-sky-500 outline-none">
+            </div>
+
+            <div>
+                <span>E-mail</span>
+                <input name="email" placeholder="Seu e-mail aqui" type="email" class="w-full py-2 border-b-2 border-b-gray-200 focus:border-b-sky-500 outline-none">
+            </div>
+
+            <div>
+            <span>Endereço</span>
+            <input name="endereco" placeholder="Endereço" type="text" class="w-full py-2 border-b-2 border-b-gray-200 focus:border-b-sky-500 outline-none">
+            </div>
+
+            <div>
+                <span>Ponto de Referência</span>
+                <input name="pontodereferencia" placeholder="Ponto de Referência" type="text" class="w-full py-2 border-b-2 border-b-gray-200 focus:border-b-sky-500 outline-none">
+            </div>
+
+            <div>
+                <span>Quantidade de Lixo a ser recolhido</span>
+                <select name="qtdlixo" type="text" class="w-full py-2 border-2 border-gray-200 focus:border-b-sky-500 outline-none">
+                    <option value="selecione">Selecione</option>
+                    <option value="Até 50 litros">Até 50 litros</option>
+                    <option value="Entre 50 a 200 litros">Entre 50 a 200 litros</option>
+                    <option value="Mais do que 200 litros">Mais do que 200 litros</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit" class="bg-sky-500 py-3 px-6 border-sky-600 border hover:bg-sky-400 text-white font-bold">Enviar</button>
+                <a href="verDados.php" target="_blank" class="bg-zinc-500 py-3 px-6 border-zinc-600 border hover:bg-zinc-400 text-white font-bold">Ver dados</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
